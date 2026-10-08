@@ -1,0 +1,9 @@
+name: Wild Hunt deep tag marker
+on:
+  push:
+    tags: ["wh-depth-*"]
+jobs:
+  marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo wild-hunt-deep-tag-marker
